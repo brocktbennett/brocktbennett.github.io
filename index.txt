@@ -1,8 +1,8 @@
-Jack - personal portfolio
+Brock - personal portfolio
 
 # HEDER
 
-Jack.
+Brock.
 
 En
 Ar
@@ -71,7 +71,7 @@ About me
 
 Need a Creative Product? I can Help You!
 
-Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+Hi! I’m Brock Bennett, a passionate Data Scientist dedicated to transforming ideas into impactful solutions through innovative and clean designs. I specialize in crafting intuitive web applications and leveraging data-driven insights to solve complex problems. Continuously curious, I thrive on learning new skills, tools, and methodologies to stay at the forefront of the field. Along with completing diverse solo projects, I have collaborated with dynamic teams, excelling in environments that emphasize agile practices, effective communication, version control, and efficient project management.
 
 Hire me
 
@@ -218,8 +218,8 @@ Phone:
 
 <ion-icon name="mail-outline"></ion-icon>
 Email:
-info@jack.com
-support@jack.com
+brock.bennett@okstate.edu
+support@brocktbennett.com
 
 <ion-icon name="logo-facebook"></ion-icon>
 <ion-icon name="logo-twitter"></ion-icon>
@@ -248,9 +248,9 @@ Send
 
 # FOOTER
 
-Jack.
+Brock.
 
-&copy; 2022 codewithsadee. All rights reserved
+&copy; 2024 My Portfolio. All rights reserved
 
 
 
