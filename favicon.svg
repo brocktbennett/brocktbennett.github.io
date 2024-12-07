@@ -1,14 +1,20 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_71_50)">
-<!-- <rect width="100" height="100" rx="10" fill="white"/> -->
-<rect width="100" height="100" rx="20" fill="white"/> <!-- More rounded corners -->
-<path d="M20 10 C25 10, 35 15, 35 25 C35 35, 25 40, 20 40 L20 10 Z" fill="#1F1F1F"/> 
-  <path d="M20 40 C25 40, 35 45, 35 55 C35 65, 25 70, 20 70 L20 40 Z" fill="#1F1F1F"/>
-<path d="M65.3491 70.57H87.5691V88.5H65.3491V70.57Z" fill="#E38445"/>
-</g>
-<defs>
-<clipPath id="clip0_71_50">
-<rect width="100" height="100" rx="10" fill="white"/>
-</clipPath>
-</defs>
+  <g clip-path="url(#clip0_71_50)">
+    <!-- Background rectangle -->
+    <rect width="100" height="100" rx="20" fill="white"/> <!-- More rounded corners -->
+    
+    <!-- Upper curve of B -->
+    <path d="M20 10 C35 10, 45 20, 45 35 C45 50, 35 55, 20 55 L20 10 Z" fill="#1F1F1F"/> 
+    
+    <!-- Lower curve of B -->
+    <path d="M20 55 C35 55, 45 65, 45 80 C45 95, 35 100, 20 100 L20 55 Z" fill="#1F1F1F"/>
+    
+    <!-- Optional decorative rectangle -->
+    <path d="M65.3491 70.57H87.5691V88.5H65.3491V70.57Z" fill="#E38445"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_71_50">
+      <rect width="100" height="100" rx="10" fill="white"/>
+    </clipPath>
+  </defs>
 </svg>
