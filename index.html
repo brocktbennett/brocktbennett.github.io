@@ -80,7 +80,7 @@
 
           <li>
             <a href="#projects" class="navbar-link">My Projects.</a>
-          </li>          
+          </li>
 
           <li>
             <a href="#contact" class="navbar-link">Contact.</a>
@@ -120,7 +120,8 @@
         <ul class="hero-social-list">
 
           <li>
-            <a href="https://github.com/brocktbennett" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/brocktbennett" class="hero-social-link" target="_blank"
+              rel="noopener noreferrer">
               <ion-icon name="logo-github"></ion-icon>
 
               <div class="tooltip">Github</div>
@@ -128,7 +129,8 @@
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/brocktbennett" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/brocktbennett" class="hero-social-link" target="_blank"
+              rel="noopener noreferrer">
               <ion-icon name="logo-linkedin"></ion-icon>
 
               <div class="tooltip">Linkedin</div>
@@ -233,7 +235,12 @@
           <h2 class="h3 section-title">Data Scientist & Multi-Disciplinary Professional</h2>
 
           <p class="section-text">
-            Hi! I’m Brock Bennett, a passionate Data Scientist dedicated to transforming ideas into impactful solutions through innovative and clean designs. I specialize in crafting intuitive web applications and leveraging data-driven insights to solve complex problems. Continuously curious, I thrive on learning new skills, tools, and methodologies to stay at the forefront of the field. Along with completing diverse solo projects, I have collaborated with dynamic teams, excelling in environments that emphasize agile practices, effective communication, version control, and efficient project management.
+            Hi! I’m Brock Bennett, a passionate Data Scientist dedicated to transforming ideas into impactful solutions
+            through innovative and clean designs. I specialize in crafting intuitive web applications and leveraging
+            data-driven insights to solve complex problems. Continuously curious, I thrive on learning new skills,
+            tools, and methodologies to stay at the forefront of the field. Along with completing diverse solo projects,
+            I have collaborated with dynamic teams, excelling in environments that emphasize agile practices, effective
+            communication, version control, and efficient project management.
           </p>
 
           <div class="btn-group">
@@ -692,174 +699,91 @@
       -->
 
       <section class="contact" id="contact">
-
         <div class="contact-content section-content">
-
           <p class="section-subtitle">Contact</p>
-
-          <h2 class="h3 section-title">Have Any Data Science Project Ideas? Please Drop a Message or Email me directly</h2>
-
+          <h2 class="h3 section-title">Have Any Data Science Project Ideas? Please Drop a Message or Email me directly
+          </h2>
           <p class="section-text">
-            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+            Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
           </p>
 
           <ul class="contact-list">
-
             <li class="contact-list-item">
-
               <div class="contact-item-icon">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
-
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Address:</h3>
-
                 <address class="contact-info">
                   Oklahoma City, OK 73013, USA
                 </address>
               </div>
-
             </li>
-
             <li class="contact-list-item">
-
               <div class="contact-item-icon">
                 <ion-icon name="call-outline"></ion-icon>
               </div>
-
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Phone:</h3>
-
                 <a href="tel:405-880-4192" class="contact-info">(1) 405-880-4192</a>
-
-                <!-- <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a> -->
               </div>
-
             </li>
-
             <li class="contact-list-item">
-
               <div class="contact-item-icon">
                 <ion-icon name="mail-outline"></ion-icon>
               </div>
-
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Email:</h3>
-
                 <a href="mailto:brock.bennett@okstate.edu" class="contact-info">brock.bennett@okstate.edu</a>
-
-                <a href="mailto:support@brocktbennett.com" class="contact-info">support@brocktbennett.com</a>
               </div>
-
             </li>
-
-            <li>
-              <ul class="contac-social-list">
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Facebook</div>
-
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
-
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
-
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Youtube</div>
-
-                    <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
           </ul>
-
         </div>
 
-        <form action="https://formspree.io/f/xdkovkrd" method="POST" enctype="application/x-www-form-urlencoded"  class="contact-form">
+        <!-- Success and Error Messages -->
+        <div id="success-message" style="display:none; color: green; margin: 10px 0;">
+          <p>Thank you! Your message has been sent successfully.</p>
+        </div>
+        <div id="error-message" style="display:none; color: red; margin: 10px 0;">
+          <p>Oops! Something went wrong. Please try again.</p>
+        </div>
 
+        <form action="https://formspree.io/f/xdkovkrd" method="POST" enctype="application/x-www-form-urlencoded"
+          class="contact-form">
           <div class="form-wrapper">
-
             <label for="name" class="form-label">Name</label>
-
             <div class="input-wrapper">
-
               <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
-
               <ion-icon name="person-circle"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="email" class="form-label">Email</label>
-
             <div class="input-wrapper">
-
               <input type="email" name="email" id="email" required placeholder="e.g john.doe@mail.com"
                 class="input-field">
-
               <ion-icon name="mail"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="phone" class="form-label">Phone</label>
-
             <div class="input-wrapper">
-
               <input type="tel" name="phone" id="phone" required placeholder="(000) 000-0000" class="input-field">
-
               <ion-icon name="call"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="message" class="form-label">Message</label>
-
             <div class="input-wrapper">
-
               <textarea name="message" id="message" required placeholder="Write your message here..."
                 class="input-field"></textarea>
-
               <ion-icon name="chatbubbles"></ion-icon>
-
             </div>
-
           </div>
-
           <button type="submit" class="btn btn-primary">Send</button>
-
         </form>
-
       </section>
+
 
     </article>
   </main>
