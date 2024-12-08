@@ -701,46 +701,10 @@
       <section class="contact" id="contact">
         <div class="contact-content section-content">
           <p class="section-subtitle">Contact</p>
-          <h2 class="h3 section-title">Have Any Data Science Project Ideas? Please Drop a Message or Email me directly
-          </h2>
-          <p class="section-text">
-            Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
-          </p>
-
-          <ul class="contact-list">
-            <li class="contact-list-item">
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
-                <address class="contact-info">
-                  Oklahoma City, OK 73013, USA
-                </address>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
-                <a href="tel:000-000-0000" class="contact-info">(1) 405-880-#4192</a>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
-                <a href="mailto:brock.bennett@okstate.edu" class="contact-info">brock.bennett@okstate.edu</a>
-                <a href="mailto:support@brocktbennett.com" class="contact-info">support@brocktbennett.com</a>
-              </div>
-            </li>
-          </ul>
+          <h2 class="h3 section-title">Have Any Data Science Project Ideas? Please Drop a Message or Email me directly</h2>
+          <p class="section-text">Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.</p>
         </div>
-
+      
         <!-- Success and Error Messages -->
         <div id="success-message" style="display:none; color: green; margin: 10px 0;">
           <p>Thank you! Your message has been sent successfully.</p>
@@ -748,9 +712,8 @@
         <div id="error-message" style="display:none; color: red; margin: 10px 0;">
           <p>Oops! Something went wrong. Please try again.</p>
         </div>
-
-        <form action="https://formspree.io/f/xdkovkrd" method="POST" enctype="application/x-www-form-urlencoded"
-          class="contact-form">
+      
+        <form action="https://formspree.io/f/xdkovkrd" method="POST" enctype="application/x-www-form-urlencoded" class="contact-form">
           <div class="form-wrapper">
             <label for="name" class="form-label">Name</label>
             <div class="input-wrapper">
@@ -761,8 +724,7 @@
           <div class="form-wrapper">
             <label for="email" class="form-label">Email</label>
             <div class="input-wrapper">
-              <input type="email" name="email" id="email" required placeholder="e.g john.doe@mail.com"
-                class="input-field">
+              <input type="email" name="email" id="email" required placeholder="e.g john.doe@mail.com" class="input-field">
               <ion-icon name="mail"></ion-icon>
             </div>
           </div>
@@ -776,16 +738,42 @@
           <div class="form-wrapper">
             <label for="message" class="form-label">Message</label>
             <div class="input-wrapper">
-              <textarea name="message" id="message" required placeholder="Write your message here..."
-                class="input-field"></textarea>
+              <textarea name="message" id="message" required placeholder="Write your message here..." class="input-field"></textarea>
               <ion-icon name="chatbubbles"></ion-icon>
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Send</button>
         </form>
       </section>
-
-
+      <script>
+        const form = document.querySelector('.contact-form');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+      
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault(); // Prevent default form submission
+          const formData = new FormData(form);
+      
+          try {
+            const response = await fetch(form.action, {
+              method: form.method,
+              body: formData,
+              headers: { 'Accept': 'application/json' },
+            });
+      
+            if (response.ok) {
+              successMessage.style.display = 'block'; // Show success message
+              errorMessage.style.display = 'none'; // Hide error message
+              form.reset(); // Clear the form fields
+            } else {
+              throw new Error('Submission failed');
+            }
+          } catch (error) {
+            successMessage.style.display = 'none'; // Hide success message
+            errorMessage.style.display = 'block'; // Show error message
+          }
+        });
+      </script>
     </article>
   </main>
 
